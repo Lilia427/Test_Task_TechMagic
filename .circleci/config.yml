@@ -1,0 +1,62 @@
+# version: 2.1
+
+# executors:
+#   terraform-executor:
+#     docker:
+#       - image: hashicorp/terraform:1.3.9
+#     environment:
+#       AWS_DEFAULT_REGION: "us-east-1"
+
+# jobs:
+#   terraform:
+#     executor: terraform-executor
+#     steps:
+#       - checkout
+#       - run:
+#           name: Configure AWS Credentials
+#           command: |
+#             mkdir -p ~/.aws
+#             echo "[default]" > ~/.aws/credentials
+#             echo "aws_access_key_id=${AWS_ACCESS_KEY_ID}" >> ~/.aws/credentials
+#             echo "aws_secret_access_key=${AWS_SECRET_ACCESS_KEY}" >> ~/.aws/credentials
+#             echo "[default]" > ~/.aws/config
+#             echo "region=${AWS_DEFAULT_REGION}" >> ~/.aws/config
+#       - run:
+#           name: Terraform Init
+#           command: |
+#             cd .terraform_files && terraform init
+#       - run:
+#           name: Terraform Validate
+#           command: |
+#             cd .terraform_files && terraform validate
+#       - run:
+#           name: Terraform Plan
+#           command: |
+#             cd .terraform_files && terraform plan -out=tfplan
+#       - run:
+#           name: Terraform Apply
+#           command: |
+#             cd .terraform_files && terraform apply -auto-approve tfplan
+
+#   upload_html_to_efs:
+#     docker:
+#       - image: amazon/aws-cli:2.11.15
+#     environment:
+#       AWS_DEFAULT_REGION: "us-east-1"
+#     steps:
+#       - checkout
+#       - run:
+#           name: Upload HTML file to EFS
+#           command: |
+#             echo "Hello, Techmagic!" > index.html
+#             mkdir -p /mnt/efs
+#             mount -t efs ${EFS_ID}:/ /mnt/efs
+#             cp index.html /mnt/efs/index.html
+
+# workflows:
+#   terraform_workflow:
+#     jobs:
+#       - terraform
+#       - upload_html_to_efs:
+#           requires:
+#             - terraform
