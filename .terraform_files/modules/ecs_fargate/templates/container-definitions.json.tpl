@@ -21,7 +21,7 @@
       {
         "name": "efs-volume",
         "efsVolumeConfiguration": {
-          "fileSystemId": "${efs_id}",
+          "fileSystemId": "fs-0344ff2237ce52daf", 
           "rootDirectory": "/",
           "transitEncryption": "ENABLED"
         }
@@ -30,13 +30,10 @@
     "logConfiguration": {
       "logDriver": "awslogs",
       "options": {
-        "awslogs-group": "${log_group_name}",
-        "awslogs-region": "${log_group_region}",
+        "awslogs-group": "/ecs/nginx",
+        "awslogs-region": "us-east-1",
         "awslogs-stream-prefix": "nginx"
       }
-    },
-    "command": [
-      "aws s3 cp s3://${s3_bucket_name}/index.html /usr/share/nginx/html/index.html && nginx -g 'daemon off;'"
-    ]
+    }
   }
 ]
