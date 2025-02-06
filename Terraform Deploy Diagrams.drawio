@@ -1,0 +1,1655 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="26.0.11" pages="5">
+  <diagram id="ZfbsGRJLo8-bM9efjVY6" name="Terrafom File Structure diagram">
+    <mxGraphModel dx="278" dy="-242" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="aSXUmo1Hyl-a-YAIDOWD-29" value=".terraform_files" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.folder;" parent="1" vertex="1">
+          <mxGeometry x="1882" y="1250.5" width="60" height="49.5" as="geometry" />
+        </mxCell>
+        <mxCell id="aSXUmo1Hyl-a-YAIDOWD-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="aSXUmo1Hyl-a-YAIDOWD-31" target="aSXUmo1Hyl-a-YAIDOWD-42" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aSXUmo1Hyl-a-YAIDOWD-31" value="&amp;lt;AWS Service&amp;gt;" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.folder;" parent="1" vertex="1">
+          <mxGeometry x="2192" y="1450.5" width="60" height="49.5" as="geometry" />
+        </mxCell>
+        <mxCell id="aSXUmo1Hyl-a-YAIDOWD-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="aSXUmo1Hyl-a-YAIDOWD-38" target="aSXUmo1Hyl-a-YAIDOWD-41" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aSXUmo1Hyl-a-YAIDOWD-38" value="environments" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.folder;" parent="1" vertex="1">
+          <mxGeometry x="2035.5" y="1250.5" width="60" height="49.5" as="geometry" />
+        </mxCell>
+        <mxCell id="aSXUmo1Hyl-a-YAIDOWD-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="aSXUmo1Hyl-a-YAIDOWD-40" target="aSXUmo1Hyl-a-YAIDOWD-31" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aSXUmo1Hyl-a-YAIDOWD-40" value="modules" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.folder;" parent="1" vertex="1">
+          <mxGeometry x="2035.5" y="1450.5" width="60" height="49.5" as="geometry" />
+        </mxCell>
+        <mxCell id="aSXUmo1Hyl-a-YAIDOWD-41" value="&amp;lt;environmen&amp;gt;.tfvars&lt;br&gt;&amp;nbsp;" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.document;" parent="1" vertex="1">
+          <mxGeometry x="2201.5" y="1250.5" width="41" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="aSXUmo1Hyl-a-YAIDOWD-42" value="main.tf&lt;br&gt;Contains configuration&lt;br&gt;for a service and &lt;br&gt;it&#39;s dependancies" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.document;" parent="1" vertex="1">
+          <mxGeometry x="2401" y="1450" width="41" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="aSXUmo1Hyl-a-YAIDOWD-43" value="variables.tf&lt;br&gt;Contains variables that &lt;br&gt;are needed to create&lt;br&gt;&amp;nbsp;a service, or that &lt;br&gt;service is using." style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.document;" parent="1" vertex="1">
+          <mxGeometry x="2402.5" y="1580.5" width="41" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="aSXUmo1Hyl-a-YAIDOWD-44" value="outputs.tf&lt;br&gt;Varaibles that are &lt;br&gt;used in different &lt;br&gt;module creation.&amp;nbsp;" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.document;" parent="1" vertex="1">
+          <mxGeometry x="2402.5" y="1760.5" width="41" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="aSXUmo1Hyl-a-YAIDOWD-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.018;entryY=0.522;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="aSXUmo1Hyl-a-YAIDOWD-31" target="aSXUmo1Hyl-a-YAIDOWD-43" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aSXUmo1Hyl-a-YAIDOWD-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.004;entryY=0.649;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="aSXUmo1Hyl-a-YAIDOWD-31" target="aSXUmo1Hyl-a-YAIDOWD-44" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aSXUmo1Hyl-a-YAIDOWD-47" value="main.tf&lt;br&gt;Contains configuration&lt;br&gt;with all modules &lt;br&gt;and provider &lt;br&gt;configuration" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.document;" parent="1" vertex="1">
+          <mxGeometry x="2035.5" y="1560.5" width="41" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="aSXUmo1Hyl-a-YAIDOWD-48" value="variables.tf&lt;br&gt;Contains variables that &lt;br&gt;are used in all modules" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.document;" parent="1" vertex="1">
+          <mxGeometry x="2037" y="1711" width="41" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="aSXUmo1Hyl-a-YAIDOWD-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.03;entryY=0.509;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="aSXUmo1Hyl-a-YAIDOWD-29" target="aSXUmo1Hyl-a-YAIDOWD-38" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aSXUmo1Hyl-a-YAIDOWD-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.016;entryY=0.619;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="aSXUmo1Hyl-a-YAIDOWD-29" target="aSXUmo1Hyl-a-YAIDOWD-40" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aSXUmo1Hyl-a-YAIDOWD-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.021;entryY=0.504;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="aSXUmo1Hyl-a-YAIDOWD-29" target="aSXUmo1Hyl-a-YAIDOWD-47" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aSXUmo1Hyl-a-YAIDOWD-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.007;entryY=0.621;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="aSXUmo1Hyl-a-YAIDOWD-29" target="aSXUmo1Hyl-a-YAIDOWD-48" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="rD1ntYyAQcJS1YAYiFPE" name="Terraform Manage Clients Configuration">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="EPlTWR9_ETFE0dVp8Tib-1" value="DevOps Role (manual)" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="30" width="980" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="bhPwS9dhYD09xlTZFKr6-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="EPlTWR9_ETFE0dVp8Tib-1" target="FzzhrCNctGicx5quiWpB-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="190" y="150" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bhPwS9dhYD09xlTZFKr6-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="EPlTWR9_ETFE0dVp8Tib-1" source="FzzhrCNctGicx5quiWpB-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="250" y="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FzzhrCNctGicx5quiWpB-2" value="Login into the AWS Production account" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EPlTWR9_ETFE0dVp8Tib-1">
+          <mxGeometry x="70" y="20" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bhPwS9dhYD09xlTZFKr6-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="EPlTWR9_ETFE0dVp8Tib-1" source="FzzhrCNctGicx5quiWpB-8" target="FzzhrCNctGicx5quiWpB-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FzzhrCNctGicx5quiWpB-8" value="Create the /.terraform_files/environments/&amp;lt;environment_name&amp;gt;.tfvars file inside the&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;Front-end&lt;/span&gt;&amp;nbsp;GitHub repo for each new environment" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EPlTWR9_ETFE0dVp8Tib-1">
+          <mxGeometry x="70" y="125" width="355" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FzzhrCNctGicx5quiWpB-9" value="Git commit &amp;amp;&amp;amp; git push to your branch" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EPlTWR9_ETFE0dVp8Tib-1">
+          <mxGeometry x="510" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jWejwx8R8TChaFinPrM2-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="EPlTWR9_ETFE0dVp8Tib-1" source="rcksvYcbYkmFW4VjhMJh-5" target="jWejwx8R8TChaFinPrM2-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rcksvYcbYkmFW4VjhMJh-5" value="Add a DNS records&amp;nbsp;&lt;br&gt;&amp;nbsp;pointing to a CloudFront" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EPlTWR9_ETFE0dVp8Tib-1">
+          <mxGeometry x="760" y="190" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NHewTxFXvpMeYwL05xcC-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="EPlTWR9_ETFE0dVp8Tib-1" source="NHewTxFXvpMeYwL05xcC-33" target="NHewTxFXvpMeYwL05xcC-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NHewTxFXvpMeYwL05xcC-33" value="Create Access keys for front-end-terraforn user&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EPlTWR9_ETFE0dVp8Tib-1">
+          <mxGeometry x="250" y="20" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jWejwx8R8TChaFinPrM2-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="EPlTWR9_ETFE0dVp8Tib-1" source="NHewTxFXvpMeYwL05xcC-34" target="FzzhrCNctGicx5quiWpB-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NHewTxFXvpMeYwL05xcC-34" value="Add environment variables to CIrcleCI" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EPlTWR9_ETFE0dVp8Tib-1">
+          <mxGeometry x="420" y="20" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jWejwx8R8TChaFinPrM2-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="EPlTWR9_ETFE0dVp8Tib-1" source="jWejwx8R8TChaFinPrM2-2" target="jWejwx8R8TChaFinPrM2-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jWejwx8R8TChaFinPrM2-2" value="Add Environment Variables to Serets Manager" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EPlTWR9_ETFE0dVp8Tib-1">
+          <mxGeometry x="760" y="105" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jWejwx8R8TChaFinPrM2-16" value="Rerun CircleCI pipeline to deploy code with correct environemnt variabels" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EPlTWR9_ETFE0dVp8Tib-1">
+          <mxGeometry x="760" y="20" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="EPlTWR9_ETFE0dVp8Tib-2" value="GitHub actions Role" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="300" width="980" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="bhPwS9dhYD09xlTZFKr6-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="EPlTWR9_ETFE0dVp8Tib-2" source="rcksvYcbYkmFW4VjhMJh-3" target="rcksvYcbYkmFW4VjhMJh-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rcksvYcbYkmFW4VjhMJh-3" value="Run the resource creation (terraform apply) workflow for a new environment" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EPlTWR9_ETFE0dVp8Tib-2">
+          <mxGeometry x="605" y="85" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rcksvYcbYkmFW4VjhMJh-4" value="Add a name of a new environment to the &quot;&lt;b&gt;&amp;lt;project_name&amp;gt;-existing-environments-frontend&lt;/b&gt;&quot; parameter store" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EPlTWR9_ETFE0dVp8Tib-2">
+          <mxGeometry x="780" y="77.5" width="180" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="EPlTWR9_ETFE0dVp8Tib-2" source="AmAuCxnbR-0wX4FVL7e7-1" target="rcksvYcbYkmFW4VjhMJh-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="115" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="EPlTWR9_ETFE0dVp8Tib-2" source="yT_i045ek_obCY_5fULA-1" target="yT_i045ek_obCY_5fULA-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="175" y="250" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="175" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-7" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="yT_i045ek_obCY_5fULA-6">
+          <mxGeometry x="-0.44" y="1" relative="1" as="geometry">
+            <mxPoint x="109" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-1" value="Check whether&amp;nbsp; environment already exists" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="EPlTWR9_ETFE0dVp8Tib-2">
+          <mxGeometry x="50" y="30" width="250" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-4" value="End CI/CD" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EPlTWR9_ETFE0dVp8Tib-2">
+          <mxGeometry x="400" y="180" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="AmAuCxnbR-0wX4FVL7e7-1" value="Create .aws/config file dynamically with profile name and IAM Role to assume" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="EPlTWR9_ETFE0dVp8Tib-2">
+          <mxGeometry x="400" y="82.5" width="140" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="AmAuCxnbR-0wX4FVL7e7-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="EPlTWR9_ETFE0dVp8Tib-2" source="yT_i045ek_obCY_5fULA-1" target="AmAuCxnbR-0wX4FVL7e7-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="770" y="415" as="targetPoint" />
+            <mxPoint x="480" y="415" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AmAuCxnbR-0wX4FVL7e7-3" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="AmAuCxnbR-0wX4FVL7e7-2">
+          <mxGeometry x="-0.5429" y="1" relative="1" as="geometry">
+            <mxPoint x="17" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rcksvYcbYkmFW4VjhMJh-2" value="&lt;h1&gt;Comments&lt;/h1&gt;Don&#39;t change the .tfvar file name&amp;nbsp;neither in back-end or front-end repositories since it will be treated as a new client.&lt;br&gt;&lt;p&gt;Inside AWS Organization account create a client-list.txt file within the compiify-clients S3 bucket with all existing client accounts. Check with this file whether we need to create a new account.&lt;/p&gt;&lt;p&gt;For easier readability, the workflow name will have the client name and incremental number.&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-190" y="69" width="310" height="241" as="geometry" />
+        </mxCell>
+        <mxCell id="rcksvYcbYkmFW4VjhMJh-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="rcksvYcbYkmFW4VjhMJh-4" target="rcksvYcbYkmFW4VjhMJh-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1040" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FzzhrCNctGicx5quiWpB-9" target="yT_i045ek_obCY_5fULA-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="760" y="310" />
+              <mxPoint x="355" y="310" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-14" value="DevOps Role (manual)" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="660" width="980" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="jWejwx8R8TChaFinPrM2-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="yT_i045ek_obCY_5fULA-14" source="jWejwx8R8TChaFinPrM2-36">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="45" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jWejwx8R8TChaFinPrM2-36" value="Login into the AWS Production account" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="yT_i045ek_obCY_5fULA-14">
+          <mxGeometry x="60" y="15" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jWejwx8R8TChaFinPrM2-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="yT_i045ek_obCY_5fULA-14" source="jWejwx8R8TChaFinPrM2-38" target="jWejwx8R8TChaFinPrM2-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jWejwx8R8TChaFinPrM2-38" value="Create the /.terraform_files/environments/&amp;lt;environment_name&amp;gt;.tfvars file inside the Back&lt;span style=&quot;background-color: initial;&quot;&gt;-end&lt;/span&gt;&amp;nbsp;GitHub repo for each new environment" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="yT_i045ek_obCY_5fULA-14">
+          <mxGeometry x="115" y="260" width="355" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="jWejwx8R8TChaFinPrM2-39" value="Git commit &amp;amp;&amp;amp; git push your branch" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="yT_i045ek_obCY_5fULA-14">
+          <mxGeometry x="530" y="255" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jWejwx8R8TChaFinPrM2-41" value="Add a DNS records&amp;nbsp;&lt;br&gt;&amp;nbsp;pointing to a ELB" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="yT_i045ek_obCY_5fULA-14">
+          <mxGeometry x="770" y="255" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jWejwx8R8TChaFinPrM2-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="yT_i045ek_obCY_5fULA-14" source="jWejwx8R8TChaFinPrM2-51" target="jWejwx8R8TChaFinPrM2-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jWejwx8R8TChaFinPrM2-43" value="Create Access keys for back-end-terraforn user&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="yT_i045ek_obCY_5fULA-14">
+          <mxGeometry x="240" y="15" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jWejwx8R8TChaFinPrM2-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="yT_i045ek_obCY_5fULA-14" source="jWejwx8R8TChaFinPrM2-45" target="jWejwx8R8TChaFinPrM2-53">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="90" />
+              <mxPoint x="175" y="90" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jWejwx8R8TChaFinPrM2-45" value="Add environment variables to CircleCI" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="yT_i045ek_obCY_5fULA-14">
+          <mxGeometry x="550" y="15" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jWejwx8R8TChaFinPrM2-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="yT_i045ek_obCY_5fULA-14" source="jWejwx8R8TChaFinPrM2-49" target="jWejwx8R8TChaFinPrM2-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jWejwx8R8TChaFinPrM2-49" value="Select a branch you are going to deploy" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="yT_i045ek_obCY_5fULA-14">
+          <mxGeometry x="350" y="135" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jWejwx8R8TChaFinPrM2-51" value="Create ECR &amp;lt;project_name&amp;gt;-base repository" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="yT_i045ek_obCY_5fULA-14">
+          <mxGeometry x="400" y="15" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jWejwx8R8TChaFinPrM2-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="yT_i045ek_obCY_5fULA-14" source="jWejwx8R8TChaFinPrM2-43" target="jWejwx8R8TChaFinPrM2-51">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="540" y="705" as="sourcePoint" />
+            <mxPoint x="708" y="705" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jWejwx8R8TChaFinPrM2-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="yT_i045ek_obCY_5fULA-14" source="jWejwx8R8TChaFinPrM2-53" target="jWejwx8R8TChaFinPrM2-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jWejwx8R8TChaFinPrM2-53" value="Create AWS Secrets Manager &amp;lt;environment_name&amp;gt;/&amp;lt;project_name&amp;gt;/backend&lt;br&gt;and populate it with environment variables for the application that will not be created by terrafom itself" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="yT_i045ek_obCY_5fULA-14">
+          <mxGeometry x="35" y="130" width="280" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="jWejwx8R8TChaFinPrM2-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="yT_i045ek_obCY_5fULA-14" source="jWejwx8R8TChaFinPrM2-56" target="jWejwx8R8TChaFinPrM2-38">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="580" y="220" />
+              <mxPoint x="293" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jWejwx8R8TChaFinPrM2-56" value="Build and push Dockerfile.base to the base ECR repo" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="yT_i045ek_obCY_5fULA-14">
+          <mxGeometry x="520" y="135" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-27" value="GitHub actions Role" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="1010" width="980" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="yT_i045ek_obCY_5fULA-27" source="yT_i045ek_obCY_5fULA-29" target="yT_i045ek_obCY_5fULA-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-29" value="Run the resource creation (terraform apply) workflow for each new account" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="yT_i045ek_obCY_5fULA-27">
+          <mxGeometry x="610" y="85" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-30" value="Add a name of a new environment to the &quot;&lt;b&gt;&amp;lt;project_name&amp;gt;-existing-environments-backend&lt;/b&gt;&quot; parameter store" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="yT_i045ek_obCY_5fULA-27">
+          <mxGeometry x="780" y="72.5" width="180" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="yT_i045ek_obCY_5fULA-27" source="VF2WqdQYghJ1YNJfZThV-1" target="yT_i045ek_obCY_5fULA-29">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390" y="115" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-35" value="Check whether environment already exists" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="yT_i045ek_obCY_5fULA-27">
+          <mxGeometry x="50" y="30" width="250" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-36" value="End CI/CD" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="yT_i045ek_obCY_5fULA-27">
+          <mxGeometry x="410" y="190" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="yT_i045ek_obCY_5fULA-27" source="yT_i045ek_obCY_5fULA-35" target="yT_i045ek_obCY_5fULA-36">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="175" y="390" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-40" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="yT_i045ek_obCY_5fULA-39">
+          <mxGeometry x="0.0872" relative="1" as="geometry">
+            <mxPoint x="46" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VF2WqdQYghJ1YNJfZThV-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="yT_i045ek_obCY_5fULA-27" source="yT_i045ek_obCY_5fULA-35" target="VF2WqdQYghJ1YNJfZThV-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="790" y="1025" as="targetPoint" />
+            <mxPoint x="480" y="1025" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VF2WqdQYghJ1YNJfZThV-3" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="VF2WqdQYghJ1YNJfZThV-2">
+          <mxGeometry x="-0.5429" y="1" relative="1" as="geometry">
+            <mxPoint x="15" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VF2WqdQYghJ1YNJfZThV-1" value="Create .aws/config file dynamically with profile name and IAM Role to assume" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="yT_i045ek_obCY_5fULA-27">
+          <mxGeometry x="410" y="82.5" width="140" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-44" value="DevOps Role (manual)" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1321" y="100" width="719" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="yT_i045ek_obCY_5fULA-44" source="yT_i045ek_obCY_5fULA-54" target="yT_i045ek_obCY_5fULA-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-54" value="Update the /.terraform/client/&amp;lt;client_name&amp;gt;.tfvar file inside&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;Yosemite&lt;/span&gt;&amp;nbsp;GitHub repo" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="yT_i045ek_obCY_5fULA-44">
+          <mxGeometry x="69" y="60" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-55" value="Git commit &amp;amp;&amp;amp; git push to production branch" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="yT_i045ek_obCY_5fULA-44">
+          <mxGeometry x="399" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-57" value="GitHub actions Role" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1321" y="260" width="719" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-59" value="Run the resource creation workflow (terraform apply)&lt;br&gt;&amp;nbsp;for each updated account" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="yT_i045ek_obCY_5fULA-57">
+          <mxGeometry x="559" y="82.5" width="150" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-66" value="End CI/CD" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="yT_i045ek_obCY_5fULA-57">
+          <mxGeometry x="370" y="185" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="yT_i045ek_obCY_5fULA-57" source="AmAuCxnbR-0wX4FVL7e7-4" target="yT_i045ek_obCY_5fULA-59">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-69" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="yT_i045ek_obCY_5fULA-57" source="yT_i045ek_obCY_5fULA-71" target="yT_i045ek_obCY_5fULA-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-70" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="yT_i045ek_obCY_5fULA-69">
+          <mxGeometry x="0.0872" relative="1" as="geometry">
+            <mxPoint x="62" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-71" value="Check whether the client&#39;s accounts&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;configuration was changed" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="yT_i045ek_obCY_5fULA-57">
+          <mxGeometry x="45" y="45" width="260" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="AmAuCxnbR-0wX4FVL7e7-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="yT_i045ek_obCY_5fULA-57" source="yT_i045ek_obCY_5fULA-71" target="AmAuCxnbR-0wX4FVL7e7-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1626" y="415" as="sourcePoint" />
+            <mxPoint x="1860" y="415" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AmAuCxnbR-0wX4FVL7e7-6" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="AmAuCxnbR-0wX4FVL7e7-5">
+          <mxGeometry x="-0.8286" y="-3" relative="1" as="geometry">
+            <mxPoint x="18" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="AmAuCxnbR-0wX4FVL7e7-4" value="Create the .aws/config file dynamically with profile name and IAM Role ARN to assume" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="yT_i045ek_obCY_5fULA-57">
+          <mxGeometry x="370" y="82.5" width="140" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-74" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="yT_i045ek_obCY_5fULA-55" target="yT_i045ek_obCY_5fULA-71">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1780" y="290" />
+              <mxPoint x="1496" y="290" />
+            </Array>
+            <mxPoint x="1496" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-75" value="DevOps Role (manual)" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1321" y="660" width="719" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="yT_i045ek_obCY_5fULA-75" source="yT_i045ek_obCY_5fULA-77" target="yT_i045ek_obCY_5fULA-78">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-77" value="Update the /.terraform/client/&amp;lt;client_name&amp;gt;.tfvar file inside Yellowstone&amp;nbsp;GitHub repo" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="yT_i045ek_obCY_5fULA-75">
+          <mxGeometry x="69" y="60" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-78" value="Git commit &amp;amp;&amp;amp; git push to production branch" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="yT_i045ek_obCY_5fULA-75">
+          <mxGeometry x="399" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-79" value="GitHub actions Role" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1321" y="820" width="719" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-80" value="Run the resource creation workflow (terraform apply) for each modified account" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="yT_i045ek_obCY_5fULA-79">
+          <mxGeometry x="569" y="85" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-81" value="End CI/CD" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="yT_i045ek_obCY_5fULA-79">
+          <mxGeometry x="380" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="yT_i045ek_obCY_5fULA-79" source="VF2WqdQYghJ1YNJfZThV-4" target="yT_i045ek_obCY_5fULA-80">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="yT_i045ek_obCY_5fULA-79" source="yT_i045ek_obCY_5fULA-86" target="yT_i045ek_obCY_5fULA-81">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-85" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="yT_i045ek_obCY_5fULA-84">
+          <mxGeometry x="0.0872" relative="1" as="geometry">
+            <mxPoint x="59" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-86" value="Check whether the client&#39;s accounts&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;configuration was changed" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="yT_i045ek_obCY_5fULA-79">
+          <mxGeometry x="45" y="45" width="260" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="VF2WqdQYghJ1YNJfZThV-4" value="Create the .aws/config file dynamically with profile name and IAM Role ARN to assume" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="yT_i045ek_obCY_5fULA-79">
+          <mxGeometry x="370" y="82.5" width="140" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="VF2WqdQYghJ1YNJfZThV-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="yT_i045ek_obCY_5fULA-79" source="yT_i045ek_obCY_5fULA-86" target="VF2WqdQYghJ1YNJfZThV-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1625" y="1025" as="sourcePoint" />
+            <mxPoint x="1830" y="1025" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VF2WqdQYghJ1YNJfZThV-6" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="VF2WqdQYghJ1YNJfZThV-5">
+          <mxGeometry x="-0.8286" y="-3" relative="1" as="geometry">
+            <mxPoint x="19" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yT_i045ek_obCY_5fULA-88" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="yT_i045ek_obCY_5fULA-78" target="yT_i045ek_obCY_5fULA-86">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1780" y="850" />
+              <mxPoint x="1496" y="850" />
+            </Array>
+            <mxPoint x="1496" y="890" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1sgis8AEPpjO8vJazw7q-1" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;b style=&quot;&quot;&gt;Front-end Application:&amp;nbsp; Creating new environemnt&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="-10" width="518" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FpLmsrbzuF1vJWqYHylm-1" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;b style=&quot;&quot;&gt;Back-end Application:&amp;nbsp;&amp;nbsp;&lt;/b&gt;&lt;/font&gt;&lt;b&gt;Setuping new clients without any other changes.&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="160" y="620" width="518" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FpLmsrbzuF1vJWqYHylm-2" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;b style=&quot;&quot;&gt;Front-end Application:&amp;nbsp;&amp;nbsp;&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;&lt;b style=&quot;font-size: 14px;&quot;&gt;Adding an environment to existing environments&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1320" y="60" width="670" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FpLmsrbzuF1vJWqYHylm-3" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;&quot;&gt;&lt;b style=&quot;&quot;&gt;Back-end Application:&amp;nbsp;&amp;nbsp;&lt;/b&gt;&lt;/font&gt;&lt;b&gt;Adding an environment to existing environments&lt;/b&gt;&lt;b&gt;.&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1321" y="620" width="620" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="2F_CaSaJ35r8GxqhX68L-1" value="" style="endArrow=none;html=1;rounded=0;strokeWidth=6;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1240" y="1130" as="sourcePoint" />
+            <mxPoint x="1240" y="95" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fM9bCjtGeJ3reh6erPF8-1" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Creating new environment from scratch&lt;/b&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="170" y="-460" width="518" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NHewTxFXvpMeYwL05xcC-1" value="DevOps Role (manual)" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="-400" width="1000" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="NHewTxFXvpMeYwL05xcC-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="NHewTxFXvpMeYwL05xcC-1" source="NHewTxFXvpMeYwL05xcC-3" target="NHewTxFXvpMeYwL05xcC-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NHewTxFXvpMeYwL05xcC-3" value="Create an AWS Organization" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="NHewTxFXvpMeYwL05xcC-1">
+          <mxGeometry x="250" y="20" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NHewTxFXvpMeYwL05xcC-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="NHewTxFXvpMeYwL05xcC-1" source="NHewTxFXvpMeYwL05xcC-5" target="NHewTxFXvpMeYwL05xcC-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NHewTxFXvpMeYwL05xcC-5" value="Create new AWS (qa, staging) account under the organization" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="NHewTxFXvpMeYwL05xcC-1">
+          <mxGeometry x="430" y="20" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NHewTxFXvpMeYwL05xcC-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="NHewTxFXvpMeYwL05xcC-1" source="NHewTxFXvpMeYwL05xcC-7" target="NHewTxFXvpMeYwL05xcC-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NHewTxFXvpMeYwL05xcC-7" value="Create an AWS IAM Role for CI/CD inside all accounts" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="NHewTxFXvpMeYwL05xcC-1">
+          <mxGeometry x="240" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NHewTxFXvpMeYwL05xcC-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="NHewTxFXvpMeYwL05xcC-1" source="NHewTxFXvpMeYwL05xcC-9" target="NHewTxFXvpMeYwL05xcC-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NHewTxFXvpMeYwL05xcC-9" value="Login into the AWS production account" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="NHewTxFXvpMeYwL05xcC-1">
+          <mxGeometry x="70" y="20" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NHewTxFXvpMeYwL05xcC-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="NHewTxFXvpMeYwL05xcC-1" source="NHewTxFXvpMeYwL05xcC-15" target="NHewTxFXvpMeYwL05xcC-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NHewTxFXvpMeYwL05xcC-15" value="Create acces from LaSoft AWS account to new accounts using Identity Center" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="NHewTxFXvpMeYwL05xcC-1">
+          <mxGeometry x="620" y="20" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NHewTxFXvpMeYwL05xcC-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="NHewTxFXvpMeYwL05xcC-1" source="NHewTxFXvpMeYwL05xcC-16" target="NHewTxFXvpMeYwL05xcC-18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="870" y="110" />
+              <mxPoint x="110" y="110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NHewTxFXvpMeYwL05xcC-16" value="Create acces from LaSoft AWS account to new accounts using Identity Center" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="NHewTxFXvpMeYwL05xcC-1">
+          <mxGeometry x="800" y="20" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NHewTxFXvpMeYwL05xcC-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="NHewTxFXvpMeYwL05xcC-1" source="NHewTxFXvpMeYwL05xcC-18" target="NHewTxFXvpMeYwL05xcC-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NHewTxFXvpMeYwL05xcC-18" value="Create an AWS IAM Users for CI/CD inside production account" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="NHewTxFXvpMeYwL05xcC-1">
+          <mxGeometry x="50" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NHewTxFXvpMeYwL05xcC-24" value="Continue with Front-end Application" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="NHewTxFXvpMeYwL05xcC-1">
+          <mxGeometry x="290" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NHewTxFXvpMeYwL05xcC-25" value="Continue with Back-end Application" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="NHewTxFXvpMeYwL05xcC-1">
+          <mxGeometry x="560" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NHewTxFXvpMeYwL05xcC-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="NHewTxFXvpMeYwL05xcC-1" source="NHewTxFXvpMeYwL05xcC-27" target="NHewTxFXvpMeYwL05xcC-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NHewTxFXvpMeYwL05xcC-27" value="Inside the production AWS account create two parameter store values.&amp;nbsp;&amp;nbsp;&lt;br&gt;&quot;&lt;b&gt;&amp;lt;project_name&amp;gt;-existing-environments-backend&lt;/b&gt;&quot;, and&amp;nbsp;&quot;&lt;b&gt;&amp;lt;project_name&amp;gt;-existing-environments-frontend&lt;/b&gt;&quot;&lt;br&gt;With string &quot;Environments:&quot;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="NHewTxFXvpMeYwL05xcC-1">
+          <mxGeometry x="440" y="135" width="280" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="NHewTxFXvpMeYwL05xcC-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="NHewTxFXvpMeYwL05xcC-1" source="NHewTxFXvpMeYwL05xcC-29" target="NHewTxFXvpMeYwL05xcC-24">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="855" y="250" />
+              <mxPoint x="350" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NHewTxFXvpMeYwL05xcC-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="NHewTxFXvpMeYwL05xcC-1" source="NHewTxFXvpMeYwL05xcC-29" target="NHewTxFXvpMeYwL05xcC-25">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="855" y="250" />
+              <mxPoint x="620" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NHewTxFXvpMeYwL05xcC-29" value="Inside the production account create a S3 bucket called &quot;&amp;lt;project_name&amp;gt;-tfstate&quot;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="NHewTxFXvpMeYwL05xcC-1">
+          <mxGeometry x="780" y="150" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jWejwx8R8TChaFinPrM2-61" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jWejwx8R8TChaFinPrM2-39" target="yT_i045ek_obCY_5fULA-35">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="770" y="1000" />
+              <mxPoint x="355" y="1000" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jWejwx8R8TChaFinPrM2-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="yT_i045ek_obCY_5fULA-30" target="jWejwx8R8TChaFinPrM2-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="0cuPwS-btE1qK9gfTrzy" name="Deployment Process">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-1" value="&lt;b style=&quot;font-size: 14px;&quot;&gt;Front-end Application:&amp;nbsp; Deployment process&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="1340" width="310" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-2" value="Software Developer Role (manual)" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="1380" width="1680" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="6TQf4AV5vpf5E7Jj3zI1-2" source="6TQf4AV5vpf5E7Jj3zI1-4" target="6TQf4AV5vpf5E7Jj3zI1-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-4" value="Write changes to the code" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6TQf4AV5vpf5E7Jj3zI1-2">
+          <mxGeometry x="90" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-5" value="Git commit &amp;amp;&amp;amp; git push&amp;nbsp;&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6TQf4AV5vpf5E7Jj3zI1-2">
+          <mxGeometry x="350" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-6" value="GitHub actions Role" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="1580" width="1680" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-7" value="Build codebase with npm run build" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6TQf4AV5vpf5E7Jj3zI1-6">
+          <mxGeometry x="1070" y="85" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="6TQf4AV5vpf5E7Jj3zI1-6" source="6TQf4AV5vpf5E7Jj3zI1-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1206" y="115" as="sourcePoint" />
+            <mxPoint x="1236" y="115" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="6TQf4AV5vpf5E7Jj3zI1-6" source="6TQf4AV5vpf5E7Jj3zI1-17" target="6TQf4AV5vpf5E7Jj3zI1-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="650" y="115" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="6TQf4AV5vpf5E7Jj3zI1-6" source="6TQf4AV5vpf5E7Jj3zI1-12" target="6TQf4AV5vpf5E7Jj3zI1-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-11" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="6TQf4AV5vpf5E7Jj3zI1-10">
+          <mxGeometry x="-0.3677" y="-1" relative="1" as="geometry">
+            <mxPoint x="6" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-12" value="Check for code&amp;nbsp;changes" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="6TQf4AV5vpf5E7Jj3zI1-6">
+          <mxGeometry x="95" y="40" width="160" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-13" value="End CI/CD" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6TQf4AV5vpf5E7Jj3zI1-6">
+          <mxGeometry x="380" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="6TQf4AV5vpf5E7Jj3zI1-6" source="6TQf4AV5vpf5E7Jj3zI1-12" target="6TQf4AV5vpf5E7Jj3zI1-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="175" y="390" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="175" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-15" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="6TQf4AV5vpf5E7Jj3zI1-14">
+          <mxGeometry x="0.0872" relative="1" as="geometry">
+            <mxPoint x="23" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-16" value="Send build files to S3 bucket" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6TQf4AV5vpf5E7Jj3zI1-6">
+          <mxGeometry x="1229" y="85" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-17" value="Pull environmnet variable (&amp;nbsp;REACT_APP_ENVIRONMENT&lt;span style=&quot;background-color: initial;&quot;&gt;) from AWS&amp;nbsp;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6TQf4AV5vpf5E7Jj3zI1-6">
+          <mxGeometry x="856" y="85" width="184" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="6TQf4AV5vpf5E7Jj3zI1-6" source="6TQf4AV5vpf5E7Jj3zI1-21" target="6TQf4AV5vpf5E7Jj3zI1-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="900" y="1695" as="targetPoint" />
+            <mxPoint x="610" y="1695" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="6TQf4AV5vpf5E7Jj3zI1-6" source="6TQf4AV5vpf5E7Jj3zI1-20" target="6TQf4AV5vpf5E7Jj3zI1-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-20" value="Run build_and_deploy job for each account in parallel" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6TQf4AV5vpf5E7Jj3zI1-6">
+          <mxGeometry x="539" y="85" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-21" value="Get the list of all accounts" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6TQf4AV5vpf5E7Jj3zI1-6">
+          <mxGeometry x="380" y="85" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="6TQf4AV5vpf5E7Jj3zI1-6" source="6TQf4AV5vpf5E7Jj3zI1-23" target="6TQf4AV5vpf5E7Jj3zI1-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-23" value="Create .aws/config file dynamically with profile name and IAM Role to assume" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6TQf4AV5vpf5E7Jj3zI1-6">
+          <mxGeometry x="687" y="82.5" width="140" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-24" value="Get ClouFront id using aws cli" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6TQf4AV5vpf5E7Jj3zI1-6">
+          <mxGeometry x="1387" y="85" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-25" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="6TQf4AV5vpf5E7Jj3zI1-6" source="6TQf4AV5vpf5E7Jj3zI1-16" target="6TQf4AV5vpf5E7Jj3zI1-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1356" y="115" as="sourcePoint" />
+            <mxPoint x="1546" y="115" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6TQf4AV5vpf5E7Jj3zI1-5" target="6TQf4AV5vpf5E7Jj3zI1-12">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="760" y="1590" />
+              <mxPoint x="355" y="1590" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-27" value="Software Developer Role (manual)" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="183" y="1983" width="1507" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="6TQf4AV5vpf5E7Jj3zI1-27" source="6TQf4AV5vpf5E7Jj3zI1-29" target="6TQf4AV5vpf5E7Jj3zI1-30">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-29" value="Write changes to the code" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6TQf4AV5vpf5E7Jj3zI1-27">
+          <mxGeometry x="90" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-30" value="Git commit &amp;amp;&amp;amp; git push&amp;nbsp;&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6TQf4AV5vpf5E7Jj3zI1-27">
+          <mxGeometry x="350" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-31" value="GitHub actions Role" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="183" y="2183" width="1507" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="6TQf4AV5vpf5E7Jj3zI1-31" source="6TQf4AV5vpf5E7Jj3zI1-33" target="6TQf4AV5vpf5E7Jj3zI1-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-33" value="Get the list of all accounts" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6TQf4AV5vpf5E7Jj3zI1-31">
+          <mxGeometry x="357" y="84.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="6TQf4AV5vpf5E7Jj3zI1-31" source="6TQf4AV5vpf5E7Jj3zI1-36" target="6TQf4AV5vpf5E7Jj3zI1-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="390.00000000000045" y="115" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-35" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="6TQf4AV5vpf5E7Jj3zI1-34">
+          <mxGeometry x="-0.5429" y="1" relative="1" as="geometry">
+            <mxPoint x="11" y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-36" value="Check for code&amp;nbsp;changes" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="6TQf4AV5vpf5E7Jj3zI1-31">
+          <mxGeometry x="95" y="40" width="160" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-37" value="End CI/CD" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6TQf4AV5vpf5E7Jj3zI1-31">
+          <mxGeometry x="357" y="190" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="6TQf4AV5vpf5E7Jj3zI1-31" source="6TQf4AV5vpf5E7Jj3zI1-36" target="6TQf4AV5vpf5E7Jj3zI1-37">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="175" y="390" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-39" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="6TQf4AV5vpf5E7Jj3zI1-38">
+          <mxGeometry x="0.0872" relative="1" as="geometry">
+            <mxPoint x="27" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="6TQf4AV5vpf5E7Jj3zI1-31" source="6TQf4AV5vpf5E7Jj3zI1-50" target="6TQf4AV5vpf5E7Jj3zI1-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-41" value="Run build_and_deploy job for each account in parallel" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6TQf4AV5vpf5E7Jj3zI1-31">
+          <mxGeometry x="525" y="85" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="6TQf4AV5vpf5E7Jj3zI1-31" source="6TQf4AV5vpf5E7Jj3zI1-43" target="6TQf4AV5vpf5E7Jj3zI1-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-43" value="Build and push Docker image" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6TQf4AV5vpf5E7Jj3zI1-31">
+          <mxGeometry x="862" y="85" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="6TQf4AV5vpf5E7Jj3zI1-31" source="6TQf4AV5vpf5E7Jj3zI1-45" target="6TQf4AV5vpf5E7Jj3zI1-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-45" value="Create task-def.json with the new docker image" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6TQf4AV5vpf5E7Jj3zI1-31">
+          <mxGeometry x="1030" y="85" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-46" value="Deploy new task-def.json file on each account using terraform apply" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6TQf4AV5vpf5E7Jj3zI1-31">
+          <mxGeometry x="1367" y="85" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="6TQf4AV5vpf5E7Jj3zI1-31" source="6TQf4AV5vpf5E7Jj3zI1-48" target="6TQf4AV5vpf5E7Jj3zI1-46">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-48" value="Run terraform plan. with -var-file=&quot;{client_name}.tfvar&quot;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6TQf4AV5vpf5E7Jj3zI1-31">
+          <mxGeometry x="1199" y="85" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-49" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="6TQf4AV5vpf5E7Jj3zI1-31" source="6TQf4AV5vpf5E7Jj3zI1-41" target="6TQf4AV5vpf5E7Jj3zI1-50">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="850" y="2298" as="sourcePoint" />
+            <mxPoint x="1040" y="2298" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-50" value="Create .aws/config file dynamically with profile name and IAM Role to assume" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="6TQf4AV5vpf5E7Jj3zI1-31">
+          <mxGeometry x="684" y="82.5" width="140" height="65" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="6TQf4AV5vpf5E7Jj3zI1-30" target="6TQf4AV5vpf5E7Jj3zI1-36">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="763" y="2193" />
+              <mxPoint x="358" y="2193" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-52" value="Invalidate cache" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1726" y="1665" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="6TQf4AV5vpf5E7Jj3zI1-24" target="6TQf4AV5vpf5E7Jj3zI1-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="6TQf4AV5vpf5E7Jj3zI1-54" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;b style=&quot;&quot;&gt;Back-end Application:&amp;nbsp; Deployment process&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="180" y="1940" width="310" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iOy_PowvEx3aeCgHQpom-2" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;General Overview&lt;/b&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="865" y="1290" width="310" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="l-8lFFofY54MeN83UkwC" name="Front-end: CI/CD workflows diagrams">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-74" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;&lt;b&gt;Front-end CICD&lt;/b&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="590" y="4140" width="410" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fWPUuofyyNNI9wINQ4Fg-76" target="fWPUuofyyNNI9wINQ4Fg-85">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-76" value="Create AWS credentials config file" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="596.5" y="4400" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-77" value="" style="group" connectable="0" vertex="1" parent="1">
+          <mxGeometry x="596.5" y="4303" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-78" value="" style="group" connectable="0" vertex="1" parent="fWPUuofyyNNI9wINQ4Fg-77">
+          <mxGeometry y="-13" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-79" value="" style="group" connectable="0" vertex="1" parent="fWPUuofyyNNI9wINQ4Fg-78">
+          <mxGeometry width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-80" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="fWPUuofyyNNI9wINQ4Fg-79">
+          <mxGeometry width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-81" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="fWPUuofyyNNI9wINQ4Fg-79">
+          <mxGeometry x="40" y="15" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-82" value="job: init_update_infrastructure" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="559.13" y="4260" width="184.75" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fWPUuofyyNNI9wINQ4Fg-80" target="fWPUuofyyNNI9wINQ4Fg-76">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-84" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fWPUuofyyNNI9wINQ4Fg-85" target="fWPUuofyyNNI9wINQ4Fg-90">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="651.5" y="4680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-85" value="Get the list of existing environments from AWS Parameter store" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="584.76" y="4560" width="133.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="fWPUuofyyNNI9wINQ4Fg-90" target="fWPUuofyyNNI9wINQ4Fg-95">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-87" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="fWPUuofyyNNI9wINQ4Fg-86">
+          <mxGeometry x="-0.8439" y="-2" relative="1" as="geometry">
+            <mxPoint x="25" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-88" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fWPUuofyyNNI9wINQ4Fg-90" target="fWPUuofyyNNI9wINQ4Fg-137">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="652" y="4810" />
+              <mxPoint x="652" y="4810" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-89" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="fWPUuofyyNNI9wINQ4Fg-88">
+          <mxGeometry x="-0.3251" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-90" value="Does environment &lt;br&gt;already exists?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="575.25" y="4680" width="152.5" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="fWPUuofyyNNI9wINQ4Fg-95" target="fWPUuofyyNNI9wINQ4Fg-128">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="940" y="4874" />
+              <mxPoint x="940" y="5000" />
+              <mxPoint x="1230" y="5000" />
+              <mxPoint x="1230" y="4320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-92" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="fWPUuofyyNNI9wINQ4Fg-91">
+          <mxGeometry x="-0.914" y="-1" relative="1" as="geometry">
+            <mxPoint x="-19" y="-9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fWPUuofyyNNI9wINQ4Fg-95" target="G8SL2hdNTRi7iIPWNsgZ-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="4980" />
+              <mxPoint x="715" y="4980" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-94" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="fWPUuofyyNNI9wINQ4Fg-93">
+          <mxGeometry x="-0.7756" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-95" value="Were terraform or&lt;br&gt;&amp;nbsp;.tfvars files updated?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="743.75" y="4820" width="152.5" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-96" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fWPUuofyyNNI9wINQ4Fg-97" target="fWPUuofyyNNI9wINQ4Fg-144">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1076.25" y="4420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-97" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1021.25" y="4290" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-98" value="job: build-codebase" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="4260" width="152.5" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-99" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="fWPUuofyyNNI9wINQ4Fg-103" target="fWPUuofyyNNI9wINQ4Fg-117">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="376.25" y="4345" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-100" value="" style="group" connectable="0" vertex="1" parent="1">
+          <mxGeometry x="321.25" y="4303" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-101" value="" style="group" connectable="0" vertex="1" parent="fWPUuofyyNNI9wINQ4Fg-100">
+          <mxGeometry y="-13" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-102" value="" style="group" connectable="0" vertex="1" parent="fWPUuofyyNNI9wINQ4Fg-101">
+          <mxGeometry width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-103" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="fWPUuofyyNNI9wINQ4Fg-102">
+          <mxGeometry width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-104" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="fWPUuofyyNNI9wINQ4Fg-102">
+          <mxGeometry x="40" y="15" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-105" value="job: check codebase quality" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="300" y="4260" width="152.5" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-106" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fWPUuofyyNNI9wINQ4Fg-107" target="fWPUuofyyNNI9wINQ4Fg-109">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-107" value="Terraforn init" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="5090" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-108" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fWPUuofyyNNI9wINQ4Fg-109" target="fWPUuofyyNNI9wINQ4Fg-111">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-109" value="Terraform create/select workspace" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="5180" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-110" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fWPUuofyyNNI9wINQ4Fg-111" target="fWPUuofyyNNI9wINQ4Fg-113">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-111" value="Terraform plan" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="5270" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-112" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fWPUuofyyNNI9wINQ4Fg-113" target="fWPUuofyyNNI9wINQ4Fg-142">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-113" value="Terraform apply" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="5360" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-114" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="fWPUuofyyNNI9wINQ4Fg-115" target="fWPUuofyyNNI9wINQ4Fg-128">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1230" y="5670" />
+              <mxPoint x="1230" y="4320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-115" value="Add an envrionment to the list of existing enviornmnets on AWS Parameter store" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="5650" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-116" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fWPUuofyyNNI9wINQ4Fg-117" target="fWPUuofyyNNI9wINQ4Fg-118">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-117" value="Install dependencies" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="321.25" y="4405" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-118" value="Run SonarCloud Scanner" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="321.25" y="4515" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-119" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="1061.25" y="4305" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-120" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="BSyJfydAOwJlmw7FbDUv-1" target="fWPUuofyyNNI9wINQ4Fg-122">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1076.25" y="4480" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-121" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fWPUuofyyNNI9wINQ4Fg-122" target="fWPUuofyyNNI9wINQ4Fg-124">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="BSyJfydAOwJlmw7FbDUv-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fWPUuofyyNNI9wINQ4Fg-122" target="fWPUuofyyNNI9wINQ4Fg-124">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-122" value="Install dependencies" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1021.25" y="4560" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-123" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fWPUuofyyNNI9wINQ4Fg-124" target="fWPUuofyyNNI9wINQ4Fg-126">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-124" value="Pull environment variables from AWS Secrets Manager" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1021.25" y="4660" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-125" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fWPUuofyyNNI9wINQ4Fg-126" target="fWPUuofyyNNI9wINQ4Fg-146">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-126" value="Build codebase" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1021.25" y="4780" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-127" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fWPUuofyyNNI9wINQ4Fg-128" target="fWPUuofyyNNI9wINQ4Fg-132">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-128" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1314.47" y="4290" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-129" value="job: deploy_the_application" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1293.22" y="4260" width="152.5" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-130" value="2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="1354.47" y="4305" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-131" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="BSyJfydAOwJlmw7FbDUv-4" target="fWPUuofyyNNI9wINQ4Fg-134">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-132" value="Get credentials file from a previous job" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1314.47" y="4420" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-133" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fWPUuofyyNNI9wINQ4Fg-134" target="fWPUuofyyNNI9wINQ4Fg-135">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-134" value="Debloy the codebuild to the S3 bucket" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1314.47" y="4600" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-135" value="Clear CloudFront Cache" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1314.47" y="4690" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-137" value="Set &quot;new_environemnt = true&quot;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="596.5" y="4848" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-138" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fWPUuofyyNNI9wINQ4Fg-142" target="fWPUuofyyNNI9wINQ4Fg-115">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-139" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="fWPUuofyyNNI9wINQ4Fg-138">
+          <mxGeometry x="-0.3799" y="1" relative="1" as="geometry">
+            <mxPoint x="-1" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-140" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="fWPUuofyyNNI9wINQ4Fg-142" target="fWPUuofyyNNI9wINQ4Fg-128">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1230" y="5514" />
+              <mxPoint x="1230" y="4320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-141" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="fWPUuofyyNNI9wINQ4Fg-140">
+          <mxGeometry x="-0.952" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-142" value="Is &quot;new_environment = true&quot;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="634.38" y="5460" width="161.25" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-143" value="&lt;h1&gt;Comments&lt;/h1&gt;&lt;p&gt;Jobs with the same number run in parallel.&lt;br&gt;&lt;/p&gt;&lt;p&gt;This workflow only includes creating/ updating infrastructure and deploying code&lt;/p&gt;&lt;p&gt;The automated deletions needs to be created&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-120" y="4120" width="360" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-144" value="Create AWS credentials config file" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1021.25" y="4390" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-145" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="fWPUuofyyNNI9wINQ4Fg-146" target="fWPUuofyyNNI9wINQ4Fg-128">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1230" y="4920" />
+              <mxPoint x="1230" y="4320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fWPUuofyyNNI9wINQ4Fg-146" value="Pass the build files and credentials file to the next job" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1021.25" y="4890" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G8SL2hdNTRi7iIPWNsgZ-1" value="Install AWS cli" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="596.5" y="4480" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="G8SL2hdNTRi7iIPWNsgZ-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fWPUuofyyNNI9wINQ4Fg-137" target="G8SL2hdNTRi7iIPWNsgZ-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="651" y="4908" as="sourcePoint" />
+            <mxPoint x="715" y="5090" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G8SL2hdNTRi7iIPWNsgZ-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="G8SL2hdNTRi7iIPWNsgZ-2" target="fWPUuofyyNNI9wINQ4Fg-107">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="G8SL2hdNTRi7iIPWNsgZ-2" value="Install terrafrom CLI" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660.01" y="5010" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BSyJfydAOwJlmw7FbDUv-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="fWPUuofyyNNI9wINQ4Fg-144" target="BSyJfydAOwJlmw7FbDUv-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1076" y="4450" as="sourcePoint" />
+            <mxPoint x="1076" y="4540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BSyJfydAOwJlmw7FbDUv-1" value="Install AWS cli" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1021.25" y="4465" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="BSyJfydAOwJlmw7FbDUv-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="fWPUuofyyNNI9wINQ4Fg-132" target="BSyJfydAOwJlmw7FbDUv-4">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1369" y="4480" as="sourcePoint" />
+            <mxPoint x="1369" y="4570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="BSyJfydAOwJlmw7FbDUv-4" value="Install AWS cli" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1314.47" y="4500" width="110" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="WmW8bTeri95WYaRAO8l4" name="Back-end: CI/CD workflows diagrams">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-1" value="&lt;span style=&quot;font-size: 22px;&quot;&gt;&lt;b&gt;Back-end CICD&lt;/b&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1547.5" y="4970" width="410" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="L6c682n7yIKYKQqPWTA5-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-3" target="I9CyAkPOYgu0hFu8B8eS-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-3" value="Create AWS credentials config file" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="926.51" y="5494" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-4" value="" style="group" connectable="0" vertex="1" parent="1">
+          <mxGeometry x="926.5" y="5143" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-5" value="" style="group" connectable="0" vertex="1" parent="I9CyAkPOYgu0hFu8B8eS-4">
+          <mxGeometry y="-13" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-6" value="" style="group" connectable="0" vertex="1" parent="I9CyAkPOYgu0hFu8B8eS-5">
+          <mxGeometry width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-7" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="I9CyAkPOYgu0hFu8B8eS-6">
+          <mxGeometry width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-8" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="I9CyAkPOYgu0hFu8B8eS-6">
+          <mxGeometry x="40" y="15" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-9" value="job: init_update_infrastructure" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="889.13" y="5100" width="184.75" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-11" target="I9CyAkPOYgu0hFu8B8eS-16">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="980.25" y="5718" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-11" value="Get the list of existing environments from AWS Parameter Store" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="919.75" y="5596" width="123.49" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-16" target="I9CyAkPOYgu0hFu8B8eS-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-13" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="I9CyAkPOYgu0hFu8B8eS-12">
+          <mxGeometry x="-0.8439" y="-2" relative="1" as="geometry">
+            <mxPoint x="25" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-16" target="I9CyAkPOYgu0hFu8B8eS-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-15" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="I9CyAkPOYgu0hFu8B8eS-14">
+          <mxGeometry x="-0.7071" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-16" value="Does environment &lt;br&gt;already exists?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="905.26" y="5722" width="152.5" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-18" target="bFgAYMu5ZHague6TM2os-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1420" y="5912" />
+              <mxPoint x="1420" y="6360" />
+              <mxPoint x="2530" y="6360" />
+              <mxPoint x="2530" y="5480" />
+              <mxPoint x="2460" y="5480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wqFjyTmrccAA7SgtdI1R-2" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="I9CyAkPOYgu0hFu8B8eS-17">
+          <mxGeometry x="-0.9638" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-18" value="Were terraform or&lt;br&gt;&amp;nbsp;.tfvars files updated?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1072.5" y="5858" width="152.5" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-20" target="I9CyAkPOYgu0hFu8B8eS-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-20" value="Terraforn init" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="867.7400000000001" y="6500" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-22" target="I9CyAkPOYgu0hFu8B8eS-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-22" value="Terraform workspace create or select" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="867.7400000000001" y="6590" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-24" target="I9CyAkPOYgu0hFu8B8eS-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-24" value="Terraform plan" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="867.7400000000001" y="6680" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-26" target="I9CyAkPOYgu0hFu8B8eS-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-26" value="Terraform apply" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="867.7400000000001" y="6770" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wqFjyTmrccAA7SgtdI1R-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-28" target="bFgAYMu5ZHague6TM2os-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2610" y="4872.727272727273" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2530" y="7090" />
+              <mxPoint x="2530" y="5480" />
+              <mxPoint x="2460" y="5480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-28" value="Add an envrionment to the list of existing enviornmnets to AWS Parametrs Store" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="858.87" y="7060" width="127.74" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QzRVgsCT6JM9AukqA6_g-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-30" target="RI0qAHeeHiX9BHoIFBTV-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-30" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3241.25" y="5130" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-31" value="job: deploy_the_application" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="3220" y="5100" width="152.5" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-32" value="5" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="3281.25" y="5145" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-36" target="I9CyAkPOYgu0hFu8B8eS-46">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="792.81" y="6000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-36" value="Set &quot;new_environemnt = true&quot;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="738.06" y="5888" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-41" target="I9CyAkPOYgu0hFu8B8eS-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-38" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="I9CyAkPOYgu0hFu8B8eS-37">
+          <mxGeometry x="-0.3799" y="1" relative="1" as="geometry">
+            <mxPoint x="-1" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wqFjyTmrccAA7SgtdI1R-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-41" target="bFgAYMu5ZHague6TM2os-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2650" y="5430" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2530" y="6924" />
+              <mxPoint x="2530" y="5480" />
+              <mxPoint x="2460" y="5480" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wqFjyTmrccAA7SgtdI1R-9" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="wqFjyTmrccAA7SgtdI1R-6">
+          <mxGeometry x="-0.9698" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-41" value="Is &quot;new_environment = true&quot;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="842.12" y="6870" width="161.25" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-42" value="&lt;h1&gt;Comments&lt;/h1&gt;&lt;p&gt;Jobs with the same number run in parallel.&lt;br&gt;&lt;br&gt;&lt;br&gt;Placeholder image is used with the sole purpose of creating the initial ECS task definition&lt;/p&gt;&lt;p&gt;This workflow only includes creating/ updating infrastructure and deploying code&lt;/p&gt;&lt;p&gt;The automated deletions need to be created&lt;/p&gt;&lt;p&gt;Add additional testing for the docker Image&lt;br&gt;&lt;br&gt;Add rollback if the deployment was unsecsefull&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="280" y="4970" width="370" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-46" value="Replace docker image url in task definition with placeholder public image like python:alpine&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=14;" vertex="1" parent="1">
+          <mxGeometry x="709" y="6008" width="168.12" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-47" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-18" target="I9CyAkPOYgu0hFu8B8eS-50">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="1149" y="5966" as="sourcePoint" />
+            <mxPoint x="1044" y="6227" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-48" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="I9CyAkPOYgu0hFu8B8eS-47">
+          <mxGeometry x="-0.7756" y="2" relative="1" as="geometry">
+            <mxPoint x="-2" y="14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-50" target="I9CyAkPOYgu0hFu8B8eS-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-50" value="Get current docker image url form the runing ECS task" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1088.75" y="6030" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-52" target="I9CyAkPOYgu0hFu8B8eS-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-52" value="Replace image url in task definition" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1088.75" y="6138" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L6c682n7yIKYKQqPWTA5-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-54" target="wqFjyTmrccAA7SgtdI1R-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-54" value="Form a list of environment variables in task definition" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1088.75" y="6248" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-55" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-46" target="I9CyAkPOYgu0hFu8B8eS-56">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="793" y="6070" as="sourcePoint" />
+            <mxPoint x="929" y="6388" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L6c682n7yIKYKQqPWTA5-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-56" target="wqFjyTmrccAA7SgtdI1R-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="793" y="6420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-56" value="Set ECS service desired capacity set to 0" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="718.38" y="6138" width="149.37" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-58">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2936.25" y="5240" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-58" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2881.25" y="5130" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-59" value="job: run_database_migrations" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2850" y="5100" width="180" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-60" value="4" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="2921.25" y="5145" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-61" value="job: build_docker_image" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1560" y="5100" width="141.25" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-62" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-63" target="RI0qAHeeHiX9BHoIFBTV-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1630.6200000000017" y="5276.51" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-63" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1570.6200000000017" y="5130" width="119.99999999999999" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-64" value="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="1613.4263636363648" y="5145" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-66" target="I9CyAkPOYgu0hFu8B8eS-68">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1628.4300000000017" y="5890.72" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-66" value="Build application docker images" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1570.6200000000017" y="5668.24" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-67" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-68" target="I9CyAkPOYgu0hFu8B8eS-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-68" value="Pass application images to the next job" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1570.6200000000008" y="5810.000000000001" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-69" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1920" y="5130" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-70" value="2" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="1957.5" y="5145" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-71" value="job: run unit tests" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1907.5" y="5100" width="135" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-72" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-73" target="I9CyAkPOYgu0hFu8B8eS-80">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1975" y="5440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-73" value="Install dependencies (not application dependencies)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1920" y="5240" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-74" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-69" target="I9CyAkPOYgu0hFu8B8eS-73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1.001;exitY=0.594;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-132" target="I9CyAkPOYgu0hFu8B8eS-95">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2035.000000000001" y="6138.000000000001" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-77" value="Run unit tests on the application docker image" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1920" y="5713.76" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-78" value="Create database docker container" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1920" y="5484" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-79" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-80" target="I9CyAkPOYgu0hFu8B8eS-78">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-80" value="Pull application docker image from the previous job" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1920" y="5354" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-83" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-85" target="bFgAYMu5ZHague6TM2os-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1420" y="5300" />
+              <mxPoint x="1420" y="6360" />
+              <mxPoint x="2530" y="6360" />
+              <mxPoint x="2530" y="5480" />
+              <mxPoint x="2460" y="5480" />
+            </Array>
+            <mxPoint x="2630" y="5440" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-84" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="I9CyAkPOYgu0hFu8B8eS-83">
+          <mxGeometry x="-0.9758" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="L6c682n7yIKYKQqPWTA5-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-85" target="wqFjyTmrccAA7SgtdI1R-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-85" value="Is this a main branch?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="905.26" y="5246" width="152.5" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="RI0qAHeeHiX9BHoIFBTV-7" target="I9CyAkPOYgu0hFu8B8eS-90">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L6c682n7yIKYKQqPWTA5-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-90" target="I9CyAkPOYgu0hFu8B8eS-101">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-90" value="Run docker container" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2876.25" y="5838" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L6c682n7yIKYKQqPWTA5-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-93" target="I9CyAkPOYgu0hFu8B8eS-30">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3130" y="6340" />
+              <mxPoint x="3130" y="5160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-93" value="Run database migrations" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2876.25" y="6310.05" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-94" value="" style="group" connectable="0" vertex="1" parent="1">
+          <mxGeometry x="2190" y="5095" width="140" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-95" value="Check main branch&amp;nbsp;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="I9CyAkPOYgu0hFu8B8eS-94">
+          <mxGeometry width="140" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-96" value="3" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="I9CyAkPOYgu0hFu8B8eS-94">
+          <mxGeometry x="55" y="80" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-97" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-101" target="I9CyAkPOYgu0hFu8B8eS-103">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-98" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="I9CyAkPOYgu0hFu8B8eS-97">
+          <mxGeometry x="-0.1246" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RI0qAHeeHiX9BHoIFBTV-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-101" target="I9CyAkPOYgu0hFu8B8eS-30">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="3130" y="5986" />
+              <mxPoint x="3130" y="5160" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bFgAYMu5ZHague6TM2os-11" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="RI0qAHeeHiX9BHoIFBTV-15">
+          <mxGeometry x="-0.9467" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-101" value="Are there migration&lt;br&gt;&amp;nbsp;to apply?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2860" y="5932" width="152.5" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-102" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="RI0qAHeeHiX9BHoIFBTV-13" target="I9CyAkPOYgu0hFu8B8eS-93">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-103" value="Create DB backup" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2876.25" y="6074" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-104" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-95" target="bFgAYMu5ZHague6TM2os-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-105" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="I9CyAkPOYgu0hFu8B8eS-104">
+          <mxGeometry x="-0.6743" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-106" value="Finish CICD" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2200" y="5310" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-107" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-95" target="I9CyAkPOYgu0hFu8B8eS-106">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-108" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="I9CyAkPOYgu0hFu8B8eS-107">
+          <mxGeometry x="-0.2867" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-109" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-110" target="I9CyAkPOYgu0hFu8B8eS-112">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-110" value="Run terraform init" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3236.25" y="5946" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-111" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-112" target="I9CyAkPOYgu0hFu8B8eS-114">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-112" value="Select terraform workspace" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3236.25" y="6062" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-113" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-114" target="I9CyAkPOYgu0hFu8B8eS-115">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-114" value="Run terraform plan" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3236.25" y="6179" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QzRVgsCT6JM9AukqA6_g-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-115" target="QzRVgsCT6JM9AukqA6_g-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-115" value="Run terraform apply" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3236.25" y="6295" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-116" value="Replace image url in task defenition" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3236.25" y="5596" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-117" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-116" target="I9CyAkPOYgu0hFu8B8eS-119">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3297.31" y="5713.76" as="sourcePoint" />
+            <mxPoint x="3297.31" y="5871.76" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="QzRVgsCT6JM9AukqA6_g-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-119" target="QzRVgsCT6JM9AukqA6_g-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-119" value="Form a list of environment variables in task definition" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3236.25" y="5713" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-122" value="Pull the application docker images and AWS config file from the previous job" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2877.19" y="5242" width="118.12" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-126" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-127" target="I9CyAkPOYgu0hFu8B8eS-116">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-127" value="Push Docker images to ecr repo" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3241.25" y="5480" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-128" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-78" target="I9CyAkPOYgu0hFu8B8eS-130">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1975" y="5640" as="sourcePoint" />
+            <mxPoint x="1975" y="5798" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-129" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-130" target="I9CyAkPOYgu0hFu8B8eS-77">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-130" value="Run Migration on test DB" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1920" y="5610" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-131" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-134" target="I9CyAkPOYgu0hFu8B8eS-132">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1975" y="5791.76" as="sourcePoint" />
+            <mxPoint x="1975" y="5921.76" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-132" value="Check codebase quality using sonar scanner" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1920" y="5933.71" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-133" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-77" target="I9CyAkPOYgu0hFu8B8eS-134">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1975" y="5773.76" as="sourcePoint" />
+            <mxPoint x="1975" y="5951.76" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="I9CyAkPOYgu0hFu8B8eS-134" value="Copy unit-tests coverage report to pass to sonnar-scanner" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1920" y="5823.76" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L6c682n7yIKYKQqPWTA5-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="wqFjyTmrccAA7SgtdI1R-1" target="I9CyAkPOYgu0hFu8B8eS-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wqFjyTmrccAA7SgtdI1R-1" value="Install AWS cli" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="926.51" y="5382.05" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L6c682n7yIKYKQqPWTA5-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="wqFjyTmrccAA7SgtdI1R-3" target="I9CyAkPOYgu0hFu8B8eS-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wqFjyTmrccAA7SgtdI1R-3" value="Install Terraform cli" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="867.7500000000001" y="6390" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wqFjyTmrccAA7SgtdI1R-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-7" target="I9CyAkPOYgu0hFu8B8eS-85">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="L6c682n7yIKYKQqPWTA5-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="RI0qAHeeHiX9BHoIFBTV-1" target="RI0qAHeeHiX9BHoIFBTV-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RI0qAHeeHiX9BHoIFBTV-1" value="Create AWS credentials config file" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1575.62" y="5390" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RI0qAHeeHiX9BHoIFBTV-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="RI0qAHeeHiX9BHoIFBTV-3" target="RI0qAHeeHiX9BHoIFBTV-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RI0qAHeeHiX9BHoIFBTV-3" value="Install AWS cli" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1575.62" y="5260" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L6c682n7yIKYKQqPWTA5-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="RI0qAHeeHiX9BHoIFBTV-4" target="I9CyAkPOYgu0hFu8B8eS-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RI0qAHeeHiX9BHoIFBTV-4" value="Pull base Docker image from AWS ECR" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1570.6200000000017" y="5530" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RI0qAHeeHiX9BHoIFBTV-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-122" target="RI0qAHeeHiX9BHoIFBTV-8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2936" y="5408" as="sourcePoint" />
+            <mxPoint x="2936" y="5820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RI0qAHeeHiX9BHoIFBTV-8" value="Install AWS cli" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2881.25" y="5366" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RI0qAHeeHiX9BHoIFBTV-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="RI0qAHeeHiX9BHoIFBTV-8" target="RI0qAHeeHiX9BHoIFBTV-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2937" y="5450" as="sourcePoint" />
+            <mxPoint x="2936" y="5820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RI0qAHeeHiX9BHoIFBTV-7" value="Pull environment variables into a .env file" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2876.25" y="5484" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RI0qAHeeHiX9BHoIFBTV-11" value="Install AWS session manager plugin" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2876.25" y="5602" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RI0qAHeeHiX9BHoIFBTV-12" value="Establish port forvarding through a bastion host to the RDS instance" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2876.25" y="5720" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="RI0qAHeeHiX9BHoIFBTV-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="I9CyAkPOYgu0hFu8B8eS-103" target="RI0qAHeeHiX9BHoIFBTV-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2936.31" y="6165.05" as="sourcePoint" />
+            <mxPoint x="2936.31" y="6310.05" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RI0qAHeeHiX9BHoIFBTV-13" value="Delete old DB backups" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2876.25" y="6192" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QzRVgsCT6JM9AukqA6_g-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="RI0qAHeeHiX9BHoIFBTV-16" target="RI0qAHeeHiX9BHoIFBTV-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RI0qAHeeHiX9BHoIFBTV-16" value="Pull the application docker images and AWS config file from the previous job" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3237.19" y="5241" width="118.12" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="QzRVgsCT6JM9AukqA6_g-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="RI0qAHeeHiX9BHoIFBTV-17" target="I9CyAkPOYgu0hFu8B8eS-127">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RI0qAHeeHiX9BHoIFBTV-17" value="Install AWS cli" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3241.25" y="5363" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QzRVgsCT6JM9AukqA6_g-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="QzRVgsCT6JM9AukqA6_g-1" target="I9CyAkPOYgu0hFu8B8eS-110">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="QzRVgsCT6JM9AukqA6_g-1" value="Install Terraform cli" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3241.25" y="5829" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="QzRVgsCT6JM9AukqA6_g-2" value="Wait for task to be deployed" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3236.25" y="6412" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bFgAYMu5ZHague6TM2os-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="bFgAYMu5ZHague6TM2os-1" target="I9CyAkPOYgu0hFu8B8eS-58">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bFgAYMu5ZHague6TM2os-3" value="YES" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="bFgAYMu5ZHague6TM2os-2">
+          <mxGeometry x="-0.3448" y="-2" relative="1" as="geometry">
+            <mxPoint x="-13" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bFgAYMu5ZHague6TM2os-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bFgAYMu5ZHague6TM2os-1" target="bFgAYMu5ZHague6TM2os-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bFgAYMu5ZHague6TM2os-10" value="NO" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" connectable="0" vertex="1" parent="bFgAYMu5ZHague6TM2os-9">
+          <mxGeometry x="-0.2429" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bFgAYMu5ZHague6TM2os-1" value="Finish both jobs successfully:&lt;br&gt;job: run unit tests&lt;div&gt;job: init_update_infrastructure&lt;br&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2460" y="5075" width="290" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="bFgAYMu5ZHague6TM2os-7" value="Finish CICD" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2545" y="5363" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
