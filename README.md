@@ -13,14 +13,6 @@
 | Email Provider       | AWS SES                     |                     |
 
 
----
-## Application URL’s
-
-|**Environment**|**Service Name**|**URL**|
-| :- | :- | :- |
-||Website||
-||Swagger||
-||Admin Panel||
 
 ## Tech details
 
@@ -51,7 +43,7 @@
 7. **S3**:
    - Stores static files such as the `index.html` file.
    - Defined in the `s3` module.
-   
+
 ## Installation & Lunch using Docker
 
 How to run a project locally using Docker?
